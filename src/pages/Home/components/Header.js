@@ -5,6 +5,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import SvgIcon from '@mui/material/SvgIcon';
 import { Bell } from 'react-feather';
+import Avatar from '@mui/material/Avatar';
 
 const useStyles = makeStyles({
     appBar: {
@@ -20,6 +21,12 @@ const useStyles = makeStyles({
         display: 'flex',
         alignItems: 'center',
     },
+    button: {
+        marginRight: 20,
+    },
+    bell: {
+        marginRight: 20, 
+    }
 });
 
 function Header() {
@@ -30,12 +37,13 @@ function Header() {
                 <img src="images/logo.png" alt="logo" className={Classes.img} />
                 <div className={Classes.grow}></div>
                 <div className={Classes.userSelection}>
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" className={Classes.button} color="primary">
                         Novo Post
                     </Button>
-                    <SvgIcon>
+                    <SvgIcon className={Classes.bell}>
                         <Bell></Bell>
                     </SvgIcon>
+                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                 </div>
             {/*<div className="">
                 <span><h3>Conecta-Dev</h3></span>
