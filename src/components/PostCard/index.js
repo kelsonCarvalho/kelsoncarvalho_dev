@@ -14,15 +14,15 @@ import MessageIcon from '@mui/icons-material/Message';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginBottom: 16,
-        marginRight: 20,
+        marginBottom: 20,
+        
     },
     subheader: {
         display: 'flex',
         alignItems: 'center',
     },
     caption: {
-        marginRight: 16,
+        padding: '0 24px',
     },
     messege: {
         height: 'auto',
@@ -48,12 +48,12 @@ function PostCard({ post }) {
                     subheader={
                     <div classname={Classes.subheader}>
                         <Typography variant="caption" classname={Classes.caption}>
-                            {'Avaliado por'}
+                            {'Avaliado por   '}
                         </Typography>
                         <Typography variant="sutitle2" classname={Classes.caption}>
                             {post.author.name}
                         </Typography>
-                        <Typography variant="sutitle2" classname={Classes.caption}>
+                        <Typography variant="caption" classname={Classes.caption}>
                             {post.date}
                         </Typography>
                     </div>

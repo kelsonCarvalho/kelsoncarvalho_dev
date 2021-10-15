@@ -23,10 +23,24 @@ const posts = [
         hashtags: "#dotnet, #javascript, #reactjs, #developer",
         image: "images/posts/post1.png",
     },
-{
+    {
         id: 2,
         author: {
             id: 2,
+            name: 'Kelson Carvalho',
+            username: 'kelsoncarvalho',
+            avatar: '/images/avatars/avatar_1.jpg',
+        },
+        title: "Comparativo entre React.js e Vue.js - Perfirmace",
+        date: "April 7, 2020",
+        description: "Quero criar um bootcamp gratuito para passar um pouco da minha experiencia para voces quem topa",
+        hashtags: "#framework, #javascript, #reactjs, #vue",
+        image: "images/posts/post2.png",
+    },
+    {
+        id: 3,
+        author: {
+            id: 3,
             name: 'Kelson Carvalho',
             username: 'kelsoncarvalho',
             avatar: '/images/avatars/avatar_1.jpg',

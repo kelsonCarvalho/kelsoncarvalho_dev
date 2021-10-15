@@ -6,11 +6,12 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
+
 const useStyles = makeStyles((theme) =>({
     root: {
         padding: 16,
         width: 275,
-        marginRight: 16,
+        marginRight: 40,
     },
     pontaaponta: {
         width: '100%',
@@ -30,7 +31,7 @@ function Navbar() {
     const Classes = useStyles();
     return (
         <Paper className={Classes.root}>
-            <Button variant="outlined" color="primary" className={Classes.pontaaponta}>Registrar Gratis</Button>
+            <Button variant="outlined" color="secondary" className={Classes.pontaaponta}>Registrar Gratis</Button>
             <ListSubheader>
                 {
                     'Tags em alta'

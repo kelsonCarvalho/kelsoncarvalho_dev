@@ -43,17 +43,8 @@ function Header() {
                     <SvgIcon className={Classes.bell}>
                         <Bell></Bell>
                     </SvgIcon>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                    <Avatar alt="Kelson Carvalho" src="images/avatars/avatar_1.jpg" />
                 </div>
-            {/*<div className="">
-                <span><h3>Conecta-Dev</h3></span>
-                <input type="text"></input>
-            </div>
-            <div className="">
-                
-                <span>img 1</span>
-                <span>img 2</span>
-            </div>*/}
         </Toolbar>
     </AppBar>
     );
