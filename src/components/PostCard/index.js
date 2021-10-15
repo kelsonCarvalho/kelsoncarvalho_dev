@@ -8,14 +8,14 @@ import Typography from '@mui/material/Typography';
 import Avatar from "@mui/material/Avatar";
 import IconButton from '@mui/material/IconButton'
 import CardActionArea from "@mui/material/CardActionArea";
-import FavoriteIcon from '@mui/material/FavoriteIcon';
-
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-import MessegeIcon from '@mui/material/MessegeIcon';
+import MessageIcon from '@mui/icons-material/Message';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         marginBottom: 16,
+        marginRight: 20,
     },
     subheader: {
         display: 'flex',
@@ -83,7 +83,7 @@ function PostCard({ post }) {
                             {'10'}
                         </Typography>
                 <IconButton aria-label="comment">
-                    <MessegeIcon />
+                    <MessageIcon />
                         <Typography
                             style={{ cursor: 'pointer' }}
                             color="textSecondary"
