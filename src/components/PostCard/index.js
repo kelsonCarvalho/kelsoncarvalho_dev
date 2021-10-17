@@ -20,9 +20,10 @@ const useStyles = makeStyles((theme) => ({
     subheader: {
         display: 'flex',
         alignItems: 'center',
+        marginRight: 20,
     },
-    caption: {
-        padding: '0 24px',
+    captiion: {
+        marginRight: 30,
     },
     messege: {
         height: 'auto',
@@ -34,6 +35,12 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         maxWidth:'100%',
     },
+    favorite: {
+        marginLeft: 380,
+    },
+    content: {
+        padding: 0,
+    }
 }))
 
 function PostCard({ post }) {
@@ -47,13 +54,13 @@ function PostCard({ post }) {
                     title={<Typography variant="h6">{post.title}</Typography>}
                     subheader={
                     <div classname={Classes.subheader}>
-                        <Typography variant="caption" classname={Classes.caption}>
+                        <Typography variant="" className={Classes.captiion}>
                             {'Avaliado por   '}
                         </Typography>
-                        <Typography variant="sutitle2" classname={Classes.caption}>
+                        <Typography variant="" className={Classes.captiion}>
                             {post.author.name}
                         </Typography>
-                        <Typography variant="caption" classname={Classes.caption}>
+                        <Typography variant="" className={Classes.captiion}>
                             {post.date}
                         </Typography>
                     </div>
@@ -61,7 +68,7 @@ function PostCard({ post }) {
                 >
             </CardHeader>
                 
-            <CardContent>
+            <CardContent className={Classes.content}>
                 <Typography
                     classname={Classes.messege}
                     variant="body1"
@@ -92,8 +99,8 @@ function PostCard({ post }) {
                             {'30'}
                         </Typography>
                 </IconButton>
-                <IconButton aria-label="favorite" className={Classes.favorite}>
-                    <BookmarkIcon />
+                <IconButton aria-label="favorite">
+                    <BookmarkIcon className={Classes.favorite} />
                 </IconButton>
                 </IconButton>
             </CardActions>

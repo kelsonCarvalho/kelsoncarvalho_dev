@@ -15,13 +15,13 @@ const posts = [
             id: 1,
             name: 'Kelson Carvalho',
             username: 'kelsoncarvalho',
-            avatar: 'images/avatars/avatar_1.jpg',
+            avatar: '/images/avatars/avatar_1.jpg',
         },
         title: "Criando um App do zero ultilizando React.js",
         date: "April 7, 2020",
         description: "Fala pessaol! Qual o framework favorito de voces?",
         hashtags: "#dotnet, #javascript, #reactjs, #developer",
-        image: "images/posts/post1.png",
+        image: "/images/posts/post1.png",
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const posts = [
         date: "April 7, 2020",
         description: "Quero criar um bootcamp gratuito para passar um pouco da minha experiencia para voces quem topa",
         hashtags: "#framework, #javascript, #reactjs, #vue",
-        image: "images/posts/post2.png",
+        image: "/images/posts/post2.png",
     },
     {
         id: 3,
@@ -49,7 +49,7 @@ const posts = [
         date: "April 7, 2020",
         description: "Quero criar um bootcamp gratuito para passar um pouco da minha experiencia para voces quem topa",
         hashtags: "#framework, #javascript, #reactjs, #vue",
-        image: "images/posts/post2.png",
+        image: "/images/posts/post2.png",
     },
 ];
 
